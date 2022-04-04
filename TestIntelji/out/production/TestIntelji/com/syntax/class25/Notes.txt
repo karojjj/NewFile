@@ -1,0 +1,125 @@
+Abstract classes in Java:
+Data abstraction is the process of hiding certain details and showing only essential information to the user.
+Abstraction can be achieved with either abstract classes or interfaces
+
+The abstract keyword is a non-access modifier, used for classes and methods:
+
+Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from
+another class).
+
+Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the
+subclass (inherited from).
+==An abstract class can have both abstract and regular methods
+==To access the abstract class, it must be inherited from another class.
+==The abstract keyword is used to declare abstract class
+==Abstract class does not support multiple inheritance
+==Abstract class contains Constructors
+==An abstract class contains both incomplete (abstract) and complete member and Abstract class can have abstract and
+non-abstractmethods.
+==An abstract class can contain access modifiers for the methods, properties(variables)
+== Abstract class can have final, static and non-static variables.
+==Abstract class may contain either variable or constants.
+==The default access specifier of abstract class methods are default.
+==These class properties can be reused in other class using extend keyword.
+==For the abstract class there is no restriction like initialization of variable at the time of variable declaration.
+==There are no any restriction for abstract class variable.
+==There are no any restriction for abstract class method modifier that means we can use any modifiers
+========================================================================================================================
+Why And When To Use Abstract Classes and Methods?
+To achieve security - hide certain details and only show the important details of an object.
+========================================================================================================================
+
+WHAT IS DIFFERENCE BETWEEN INTERFACE AND ABSTRACT CLASS? INTERVIEW QUESTION!!!!!!
+
+You can implement as many interfaces in java there is no limit but you can extend only one class.Another difference is
+if you declare any fields like string name, int age bla bla every fields thats declared inside the interface is going
+to be static and final
+Abstract class vs Interface
+Type of methods: Interface can have only abstract methods. An abstract class can have abstract and non-abstract methods.
+ From Java 8, it can have default and static methods also.
+Final Variables: Variables declared in a Java interface are by default final. An abstract class may contain non-final
+ variables.
+Type of variables: Abstract class can have final, non-final, static and non-static variables.
+The interface has only static and final variables.
+Implementation: Abstract class can provide the implementation of the interface.
+Interface can’t provide the implementation of an abstract class.
+Inheritance vs Abstraction:
+A Java interface can be implemented using the keyword “implements” and an abstract class can be extended using
+ the keyword “extends”.
+Multiple implementations: An interface can extend another Java interface only,
+ an abstract class can extend another Java class and implement multiple Java interfaces.
+Accessibility of Data Members: Members of a Java interface are public by default.
+A Java abstract class can have class members like private, protected, etc.
+
+
+
+
+Abstract method does not have body {}
+example public abstract void methodName();
+is a restricted class that cannot be used to create objects.it’s a protected class that cannot be instantiated.
+Process of hiding the implementation details.It is abstract keyword. We use abstract classes to achieve abstraction.We
+use after access modifiers "abstract" keyword.
+ABSTRACTION:is the process of hiding implementation details and only showing the functionality to end user.
+BENEFITS OF ABSTRACTION KEYWORD:
+1.Reduce the complexity.
+2.improves the maintainability.
+3.Can also enforce the rules utp to a certain limit
+DISADVANTAGES:
+1.Classes get tightly coupled
+class Dog{
+String name;
+Static int legs=4;
+//concrete class
+}
+public abstract class Phone{
+String make;
+String model;
+Static boolean has5g=true;
+}
+Rules:
+==Abstract classes can have all the things that regular classes do, but we can not create their objects directly and if a
+class is inheriting from the abstract class it must either provide the implementation for the abstract method or it
+ must be declared abstract
+==We can not have final keyword, abstract keyword with a method at the same time.we can make change with final keyword
+== we can not  have abstract and static method together( abstract static void displayTime(); )==> it will give error.we can
+not override static method.
+==we can not have abstract keyword with the fields name because fields do not have body{}
+==We can not create object of interface, they are just blueprint of class
+==Use "implements " keyword
+==they can only contain abstract methods
+for methods; they are abstract and public.they do not have method body .we can not write code with the method
+for variables; we should avoid using field variables. but when used they are constants, their values can not be changes
+once defined.they are public , final and static
+ -----------------------------------------------------------------------------------------------------------------------
+ Interview Question/?
+ CAN WE HAVE STATIC AND NON-STATIC METHOD INSIDE THE ABSTRACT CLASS
+ ----------------------------------------------------------------------------------------------------------------------
+ ======================================= =WHAT IS INTERFACE?===================================
+ Interfaces are also used to achieve abstraction in Java
+ we can create an interface with the keyword interface
+ fields always public static final
+ interface Human{
+ public static final int legs=2;
+ public abstract void walk();
+ public void eat(){
+
+ }
+
+
+ }
+ we can abstract inside the interface class
+==================================When to use interface or abstract class?===========================================
+if we are talking about implementation we need to use abstract clas
+class can implement more than one interface at a time but class can extend only one class but can implement many
+==================Relationship between class and interface=============================================================
+A class uses the extends keyword to implement another class.
+A class uses the implements keyword to implement an interface.
+An interface uses the extends keyword to implement an interface.
+class to class==> extends
+interface to class==> implements
+interface to interface==> extends
+
+
+ECLIPSE VS INTELJI
+workspace vs project
+project vs module

@@ -1,0 +1,153 @@
+There are  three types of variables ; local, instance and static
+========================what is difference between static and instance variables?======================================
+Local Variable
+A local variable in Java can be declared locally in methods, code blocks, and constructors.
+ When the program control enters the methods, code blocks, and constructors then the local variables are created
+ and when the program control leaves the methods, code blocks, and constructors then the local variables are destroyed.
+  A local variable must be initialized with some value.
+Instance Variable
+An instance variable in Java can be declared outside a block, method or constructor but inside a class. These variables
+ are created when the class object is created and destroyed when the class object is destroyed.
+Static/Class Variable
+A static/class variable can be defined using the static keyword. These variables are declared inside a class but
+outside a method and code block. A class/static variable can be created at the start of the program and destroyed
+ at the end of the program.
+Static gets call by class name no object need
+instance defined within a class
+void mean method do not return anything, ==> system.out.println();
+
+=======================================================================================================================
+Types of Variables in Java
+Now let us discuss different types of variables which are listed as follows:
+
+Local Variables
+Instance Variables
+Static Variables
+Let us discuss the traits of every variable been up here in detail.
+
+1. Local Variables
+
+A variable defined within a block or method or constructor is called a local variable.
+
+These variables are created when the block is entered, or the function is called and destroyed after exiting from the block or when the call returns from the function.
+The scope of these variables exists only within the block in which the variable is declared. i.e., we can access these variables only within that block.
+Initialization of the local variable is mandatory before using it in the defined scope.
+2. Instance Variables
+
+Instance variables are non-static variables and are declared in a class outside any method, constructor, or block.
+
+As instance variables are declared in a class, these variables are created when an object of the class is created and destroyed when the object is destroyed.
+Unlike local variables, we may use access specifier for instance variables. If we do not specify any access specifier, then the default access specifier will be used.
+Initialization of Instance Variable is not Mandatory. Its default value is 0
+Instance Variable can be accessed only by creating objects.
+3. Static Variables
+
+Static variables are also known as Class variables.
+
+These variables are declared similarly as instance variables. The difference is that static variables are declared using
+ the static keyword within a class outside any method constructor or block.
+Unlike instance variables, we can only have one copy of a static variable per class irrespective of how many objects
+ we create.
+Static variables are created at the start of program execution and destroyed automatically when execution ends.
+Initialization of Static Variable is not Mandatory. Its default value is 0
+If we access the static variable like the Instance variable (through an object), the compiler will show the warning
+message, which won’t halt the program. The compiler will replace the object name with the class name automatically.
+If we access the static variable without the class name, the compiler will automatically append the class name.
+Differences between the Instance variable Vs. the Static variables
+Now let us do discuss the differences between the Instance variable Vs. the Static variables
+
+Each object will have its copy of the instance variable, whereas We can only have one copy of a static variable
+per class irrespective of how many objects we create.
+Changes made in an instance variable using one object will not be reflected in other objects as each object has
+ its own copy of the instance variable. In the case of static, changes will be reflected in other objects as static
+ variables are common to all objects of a class.
+We can access instance variables through object references, and Static Variables can be accessed directly using
+the class name.
+Syntax: Static and instance variables
+
+class GFG
+{
+    // Static variable
+    static int a;
+
+    // Instance variable
+    int b;
+}
+========================================================================================================================
+REVIEW CLASS 10= Inheritance
+Inheritance is a mechanism in Java through whic one class acquire properties and method from another class.The class from
+which we acquire the properties is called
+parent class//superclass/baseclass
+child class/derived class/subclass
+Advantage;
+1.code duplication is reduced
+2.save memory
+3.execution time is less
+cpu:central process unit
+Disadvantages;
+when we change parent class it will change child class so this cause compile errors.
+Classes get tightly coupled.if we change something in the parent class it will affect all the children classes and we
+ have to make sure that this new change is compatible with the code that we have in the children classes
+ when we should use Inheritance:
+ if there is a case in which we would have to use the same methods in many different classes the best practice
+  would be to create a parent class and use it to extend the methods into the subclasses  .For example cat class and dog class
+  Types of Inheritance;
+  we have 4 types of inheritance;
+  1) Single
+  2) Hierarchical
+  3) Multilevel
+  4) Multiple (Java is not support)
+  Single Inheritance: we have  only one parent and only one child class.
+  Class Animal{
+  String name;
+  String color;
+  int age;
+  double weight;
+  }
+  class Dog extends Animal{
+
+  }
+
+   Hierarchical Inheritance:
+   In hierarchical inheritance we have only one parent class multiple children classes.
+   For example: the object class in JDK
+     Class Animal;
+     String name;
+     String color;
+     int age;
+     double weight;
+     }
+     class Dog extends Animal{
+     }
+     class Car extends Animal{
+     }
+
+     Multi level inheritance: if we have one parent and one child class and many intermediate classes
+     For example: CEO-->Manager-->Assisst Manager--> Senior Employee-->Junior Employee
+     class Human{
+
+     }
+     class Employee extends Human {
+                 String empID;
+     }
+     class Teacher extends Employee{
+                  String subjects;
+     }
+  Multiple Inheritance  :  we have a single child class and multiple parent classes. this is not supported in JAVA
+  which classess but possible with the help of interfaces.
+  class Display{
+  int resolution;
+  }
+  class Keyboard{
+  int noOfKeys;
+  }
+  class Laptop extends Display, Keybord{
+
+  }
+
+  Rules for INheritance:
+  =private members are not inherited.(privates fields and private methods)
+  =constructors do not participate in inheritance
+  =if we have constructor in the parent class we must have a matching constructor in the child class(we need to create
+  a matching constructor in the child classes )
+  =in JAVA subclass can only extend single parent class

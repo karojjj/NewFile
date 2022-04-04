@@ -1,0 +1,36 @@
+Review class notes
+
+Constructors in java are special block of code similar to methods that initialize object of a class.
+rules for the constructors:
+1.they do not have return types not even void
+2.name of the constructors must be same as name of the class
+3.Constructors can not have non access modifiers like static , final etc..
+4.We can use the access modifiers like public, private,protected with constructors
+5.if we do not write a constructors in a class a default constructor is provided by compiler(to check issues) (compiler:translate source code to binary
+JVM:Java Virtual Machine :A Java virtual machine is a virtual machine that enables a computer to run Java programs as well as programs written in other languages that are also compiled to Java bytecode. The JVM is detailed by a specification that formally describes what is required in a JVM implementation.
+6.we can have multiple constructor in a class but they are number of arguments sequence of argument or type of arguments should be different
+7.if we have multiple constructors then java decide which constructor to call based on the parameters we pass.
+If we use multiple constructors Java will define which one will be used depending on the
+inputted parameters
+this keyword:it is a reserved keyword in java that we can use to refer to instance variables methods or constrictors of a class
+==>"this" keyword is used to distinguis instance variables with local variables
+==>this is a keyword in Java that refers to the current object.it could be used with methods and constructors too
+ we can use "this"       keyword to call the constructor of a class inside another constructors
+ ==> we can use "this"             keyword to call the methods of a class
+// this(name, color, age); this is not allowed to inside the methods
+
+
+
+
+Java Access Modifiers:
+It let us give access to other files about data.
+
+There are four access modifiers
+1.Default: it happens when you did not do anything(blue triangle). you do not need to write default in front of data types
+2.public:(green circle). you write public in front of data types.the other packages can see our variables
+3.private: it does not let the other class or packages to access data. it keeps private the files
+4.protected:(yellow diamond) it let us know see the files if the files are in the same packages if it is in the different package it does not let us to access. if there is related something it can let us to access but we need to use  extends "Classname" in the public class
+constructors that is provided automatically when we do not create any constructors in a class is called default constructors
+
+
+Inheritance:

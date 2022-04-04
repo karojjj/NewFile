@@ -1,0 +1,13 @@
+method overloading in java
+when same method name exists in a class but with different number of parameters or different types of parameters/
+Advantages of method overloading:
+Flexibility of having same name methods in a class
+end user gets benefit that he does not need to remember the different method names
+RULES:
+we can overload constructors
+we can overload the static methods as well/
+we can overload main method like : public static void main(String args){} we need to change type of parameters then we
+can overload the main method
+
+Interview question? how to overriding toString() method?
+we override the "toString()" method to get the info about the fields of the class instead of getting hash code

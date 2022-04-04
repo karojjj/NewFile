@@ -1,0 +1,51 @@
+Wrapper Class:
+the wrapper converts primitive data types to object and the way around that's why wrapper class do not
+support primitive data types, so briefly they are object types for all primitive data types.When we use the wrapper
+classes.
+we get all the benefits of classes and objects for example we can have methods /Also generics works with only classes.
+Boxing in wrapper classes:
+//converting to primitive is boxing
+// converting from wrapper to primitive is unboxing
+
+Boxing happens when we convert a primitive to corresponding wrapper type.For example;
+int num=10;
+Integer num2=new Integer(num);
+unboxing happens when we convert a wrapper object to a corresponding primitive type
+Integer num2=new Integer(10)
+int num=num2.intVlaue();
+-shorter way?
+Integer num=10; //autoboxing
+int num2=num;//auto unboxing
+
+List: it is an interface in collections frame which is implemented by two classes
+ArrayList  and LinkedList common things are;
+1.we can store the duplicate values in lists
+2.insertion order is maintained
+Insertion order refers to the order in which you are adding elements to the data structure (i.e., a collection like
+List , Set , Map , etc..). For example, a List object maintains the order in which you are adding elements, whereas
+a Set object doesn't maintain the order of the elements in which they are inserted.
+
+WHEN TO USE ARRAYLIST?
+-depends on what is your end goal, to keep changing your data vs accessing it
+If most of the operations are reading and storing new data and not shifting or changing the position of data then we
+should go with arraylist
+
+When to use LinkList?
+when most of the operations related to changing the position of data or related to data shifting then we should go with
+LinkedList. Realtime example is premier league team ranks
+The iterator is used for iterating the classes in Collection framework.
+ We use an iterator to  iterate the elements of the collection classes.
+The iterator is an interface.
+You can iterate only in one direction.
+Note: Iteration can be done only once. If you reach the end of series it’s done. If we need to iterate again we should
+get a new Iterator.
+THERE ARE ONLY THREE METHODS IN THE ITERATOR INTERFACE.THEY ARE;
+1.boolean hasNext() – It returns true if iterator has more elements.
+2.Object next() – It returns the element and moves the cursor pointer to the next element.
+3.default void remove() – It removes the last elements returned by the iterator.
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Super
+is super keyword only used in inheritance?(yes)
+we can use super keyword with method overriding
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/SeliniumBatch12"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="client-combined-3.141.59.jar" scope="COMPILE">
+		<srcroot url="jar://$USER_HOME$/Downloads/Selenium installation file/client-combined-3.141.59-sources.jar!/"/>
+	</lib>
+	<levels>
+		<level name="KotlinJavaRuntime" value="project"/>
+	</levels>
+</component>

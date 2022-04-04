@@ -1,0 +1,45 @@
+Inheritance in Java: It is a mechanism in java through which a child calls get the properties and methods from a parent class.
+mechanism which acquires all properties and behavior or methods of parent class
+Benefits of inheritances:
+=saves times to code
+=code duplication is reduced
+=execution time is faster
+Disadvantages :classes are tightly coupled if we change something in parent class it is also changed in the child class
+Types of inheritance: there are 4 types but Java supports 3 of them
+1.Single inheritance:
+we have only one child and one parent class or only two classes participate inheritance one as child one as parent.
+child class=derive class=subclass
+a child class has a single direct parent .
+class Parent{
+}
+class Child extends Parent{
+}
+2.Multilevel  inheritance
+When there is a chain of inheritance, it is known as multilevel inheritance. We have multiple levels of inheritance for
+example if we have classes A B C class C will be inherited from B and b will be inherited from C.
+class A{
+}
+class B extends A{
+}
+class C extends B{
+}
+3.Hierarchical inheritance
+In Hierarchical inheritance we have a single parent and multiple child classes.
+class Parent{
+}
+class Child1 extends Parent{
+}
+class Child2 extends Parents{
+}
+4. Multiple(not supported in java) inheritance
+Why multiple inheritance is not supported in java?
+To reduce the complexity and simplify the language, multiple inheritance is not supported in java.
+Consider a scenario where A, B, and C are three classes.
+The C class inherits A and B classes. If A and B classes have the same method and you call it from child class object,
+ there will be ambiguity to call the method of A or B class.
+
+ SUPER KEYWORD: is like the "this" it refers to the parent class object for example we can access the fields method or
+ constructors of parent class inside the child class using this keyword
+ briefly The super keyword in Java is a reference variable which is used to refer immediate parent class object.
+ Whenever you create the instance of subclass, an instance of parent class is created implicitly
+ which is referred by super reference variable.

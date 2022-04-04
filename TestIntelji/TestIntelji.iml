@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/FromEclipse/src" />
+          <root url="file://$MODULE_DIR$/src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/.." />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../Class15/src" />
+          <root url="file://$MODULE_DIR$/../JavaBasics/src" />
+          <root url="file://$MODULE_DIR$/../JavaProject/src" />
+          <root url="file://$MODULE_DIR$/../SeliniumBatch12/src" />
+          <root url="file://$MODULE_DIR$/../src" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

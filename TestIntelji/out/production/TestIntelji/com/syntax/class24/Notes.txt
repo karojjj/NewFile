@@ -1,0 +1,83 @@
+Java - What is OOP?
+OOP stands for Object-Oriented Programming.
+
+Procedural programming is about writing procedures or methods that perform operations
+on the data, while object-oriented programming is about creating objects that contain both data and methods.
+
+Object-oriented programming has several advantages over procedural programming:
+
+OOP is faster and easier to execute
+OOP provides a clear structure for the programs
+OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+OOP makes it possible to create full reusable applications with less code and shorter development time
+Tip: The "Don't Repeat Yourself" (DRY) principle is about reducing the repetition of code. You should
+ extract out the codes that are common for the application, and
+ place them at a single place and reuse them instead of repeating it.
+Java Classes/Objects
+Java is an object-oriented programming language.
+
+Everything in Java is associated with classes and objects,
+along with its attributes and methods. For example: in real life, a car is an object.
+ The car has attributes, such as weight and color, and methods, such as drive and brake.
+
+A Class is like an object constructor, or a "blueprint" for creating objects.
+Java Constructors
+A constructor in Java is a special method that is used to initialize objects.
+The constructor is called when an object of a class is created.
+It can be used to set initial values for object attributes:
+Note that the constructor name must match the class name, and it cannot have a return type (like void).
+
+Also note that the constructor is called when the object is created.
+
+All classes have constructors by default: if you do not create a class constructor yourself, Java creates one for you.
+However, then you are not able to set initial values for object attributes.
+------------------------------------------------------------------------------------------------------------------------
+Method Overloading in Java
+When same method name exists in a class but different number of parameters or different data type of parameters
+or different sequence of parameters.
+Advantages of method overloading:
+Flexibility of having same name methods in a class
+End user gets benefit that he does not need to remember different method names
+Rules:
+we overload the constructors
+we can overload the static methods as well
+we can overload the main method as well
+
+rules for static method:
+=static method cannot access instance fields directly
+=instance methods can access instance as well static fields directly
+Revise these class for Selenium class
+//if else conditions
+//loops
+//methods
+// constructor and this keyword
+//Access modifier
+//types of variables
+-------------------------------------------------------------------------------------------------------------------
+Method overriding in java"
+method overriding happens when we have same named methods in parent and child class classes.
+benefits:
+1.flexibility : if we do not like something from the parent class we can override it and can provide our implementation
+2. same method can act differently depending upon the object on which we call it
+RULES:
+ 1.without inheritance method overriding is not possible
+2.Method signature should be same in parent class and in child class
+3.if something does not participate inheritance we can not override it
+constructors and private methods.
+4.we can increase the visibility in the child class, but we can not decrease it .For example, we can go from default
+ or protected.But we can not do the reverse
+ 5. we can not override a static method, but we can redeclare it
+ 5.we can not override a static method, but we can redeclare it.For example main method cannot be overridden
+ as it is static
+ 6.we  can not have different return type in the child class it must be same as of parent class.
+ ----------------------------------------------------------------------------------------------------------------------
+ OPPS Main Pillars
+ 1.Inheritance( code re-usability)
+ 2.Polymorphism(less code, dynamic behaviour
+ 3.Abstraction()
+ 4.Encapsulating
+
+ ---------------------------------------------------------------------------------------------------------------------
+ Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+ it is a process of separating ideas from their action.For example, sending sms, we just type the text and send the
+ message we do not know the internal processing about the message delivery
