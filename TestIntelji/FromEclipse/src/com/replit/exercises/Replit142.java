@@ -1,17 +1,17 @@
 package com.replit.exercises;
 
-public class Replit142SyntaxTechnologies {
+public class Replit142 {
    //class variables:
 	String schoolName;
 	int batch;
 	int year;
 	String lastDayOfClass;
 	//non argument constructor
-	Replit142SyntaxTechnologies(){
+	Replit142(){
 		
 	}
 	//parameterized constructor
-	Replit142SyntaxTechnologies(String schoolName, int batch, int year, String lastDayOfClass){
+	Replit142(String schoolName, int batch, int year, String lastDayOfClass){
 		this.schoolName=schoolName;
 		this.batch=batch;
 		this.year=year;
